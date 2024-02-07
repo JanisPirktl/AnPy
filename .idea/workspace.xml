@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cb8e4d6-86ed-4f04-a4d2-0b0def24be46" name="Changes" comment="fibonacci calculations">
+    <list default="true" id="7cb8e4d6-86ed-4f04-a4d2-0b0def24be46" name="Changes" comment="speed comparison">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fibonacci.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/fibonacci.py" afterDir="false" />
     </list>
@@ -73,7 +73,8 @@
       <workItem from="1707163402694" duration="90000" />
       <workItem from="1707234730395" duration="5326000" />
       <workItem from="1707317560620" duration="965000" />
-      <workItem from="1707326028819" duration="5102000" />
+      <workItem from="1707326028819" duration="5124000" />
+      <workItem from="1707331775228" duration="1005000" />
     </task>
     <task id="LOCAL-00001" summary="Set Basics">
       <option name="closed" value="true" />
@@ -99,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707240854909</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="speed comparison">
+      <option name="closed" value="true" />
+      <created>1707331329101</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707331329101</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,10 +117,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Set Basics" />
     <MESSAGE value="fibonacci calculations" />
-    <option name="LAST_COMMIT_MESSAGE" value="fibonacci calculations" />
+    <MESSAGE value="speed comparison" />
+    <option name="LAST_COMMIT_MESSAGE" value="speed comparison" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Analysis_Python$Test.coverage" NAME="Test Coverage Results" MODIFIED="1707235959002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/Analysis_Python$fibonacci.coverage" NAME="fibonacci Coverage Results" MODIFIED="1707331264380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$fibonacci.coverage" NAME="fibonacci Coverage Results" MODIFIED="1707332756945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
