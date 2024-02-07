@@ -66,7 +66,7 @@ for i in range(number_of_calls):
     fib_dynamic(i)
     end_time = time.perf_counter_ns()
     duration = end_time - start_time
-    total_time_dynamic = total_time_dynamic + duration
+    total_time_dynamic += duration
     print(
         f"Die {i}.te Fibonacci-Zahl ist: {fib(i)}; Dafür wurden {duration} Nanosekunden gebraucht")
 
@@ -88,7 +88,7 @@ for i in range(number_of_calls):
     fib_binet(i)
     end_time = time.perf_counter_ns()
     duration = end_time - start_time
-    total_time_binet = total_time_binet + duration
+    total_time_binet += duration
     print(
         f"Die {i}.te Fibonacci-Zahl ist: {fib(i)}; Dafür wurden {duration} Nanosekunden gebraucht")
 
@@ -98,35 +98,39 @@ print(f"Durchschnittliche Zeit der Berechnung: {round(average_time_binet)} Nanos
 print()
 
 
+
+
+
+
+
 #Berechnet 200 mal die ersten 30 Fibonacci-Zahlen mit der dynamischen Formel und Binets Formel
-#Vergleicht die dabei durchschnittlich benötigte Zeit
-binet_was_faster = 0
-dynamic_was_faster = 0
-for i in range(200):
-    total_time_binet = 0
+#Berechnet die durchschnittlich benötigte Zeit
+
+gruendlich_testen = 200
+
+total_time_binet = 0
+total_time_dynamic = 0
+
+for i in range(gruendlich_testen):
+
     for i in range(number_of_calls):
         start_time = time.perf_counter_ns()
         fib_binet(i)
         end_time = time.perf_counter_ns()
         duration = end_time - start_time
-        total_time_binet = total_time_binet + duration
-    average_time_binet = total_time_binet / number_of_calls
-    print(f"binet {average_time_binet}")
+        total_time_binet += duration
 
-    total_time_dynamic = 0
     for i in range(number_of_calls):
         start_time = time.perf_counter_ns()
         fib_dynamic(i)
         end_time = time.perf_counter_ns()
         duration = end_time - start_time
-        total_time_dynamic = total_time_dynamic + duration
-    average_time_dynamic = total_time_dynamic / number_of_calls
-    print(f"dynamic {average_time_dynamic}")
+        total_time_dynamic += duration
 
-    if average_time_dynamic > average_time_binet:
-        binet_was_faster += 1
-    if average_time_binet > average_time_dynamic:
-        dynamic_was_faster += 1
-print()
-print(f"Binet was faster {binet_was_faster} times")
-print(f"Dynamic was faster {dynamic_was_faster} times")
+total_number_of_calls = gruendlich_testen*number_of_calls
+
+average_time_dynamic = total_time_dynamic / (total_number_of_calls)
+average_time_binet = total_time_binet / (total_number_of_calls)
+
+print(f"Dynamische Funktion benötigte durschnittlich {round(average_time_dynamic)} Nanosekunden für {total_number_of_calls} Aufrufe")
+print(f"Funktion mit Binets Formel benötigte durschnittlich {round(average_time_binet)} Nanosekundenfür für {total_number_of_calls} Aufrufe")
