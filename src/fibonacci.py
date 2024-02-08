@@ -1,12 +1,11 @@
 import time
 import math
 
-#wird benutzt, um die 30 ersten Fibonacci-Zahlen zu berechnen
+# Number of Fibonacci numbers to calculate
 number_of_calls = 31
 
 
-
-#rekursive Funktion um die n-te Fibonacci-Zahl zu berechnen
+# Recursive Function
 def fib(n):
     if n <= 1:
         return n
@@ -14,123 +13,86 @@ def fib(n):
         return fib(n - 1) + fib(n - 2)
 
 
-#Funktion um die Funktionsaufrufe der rekursiven Funktion zu zählen
+# Function to count the function calls of the recursive function
 def fib_calls(n, counter):
-    counter[0] += 1 #zählt den aktuellen Aufruf
+    counter[0] += 1
     if n <= 1:
         return n, counter
     else:
         return fib_calls(n - 1, counter) + fib_calls(n - 2, counter)
 
 
-#Funktion um die n-te Fibonacci-Zahl dynamisch zu berechnen
+# Function with dynamic programming
 def fib_dynamic(n):
     if n <= 1:
         return n
-    fib_numbers = [0, 1] + [0] * (n - 1)  # Initialisiert ein Array mit den ersten zwei Fibonacci-Zahlen und setzt den Rest auf 0
+    fib_numbers = [0, 1] + [0] * (n - 1)
     for i in range(2, n + 1):
         fib_numbers[i] = fib_numbers[i - 1] + fib_numbers[i - 2]
     return fib_numbers[n]
 
 
-#Funktion um die n-te Fibonacci-Zahl mit Binets Formel zu berechnen
+# Iterative function
+def fib_iterative(n):
+    if n <= 1:
+        return n
+    fib_numbers = [0, 1]
+    for i in range(1, n):
+        current = fib_numbers[0]
+        fib_numbers[0] = fib_numbers[1]
+        fib_numbers[1] = current + fib_numbers[0]
+    return fib_numbers[1]
+
+
+# Function with Binet's formula
 def fib_binet(n):
     golden_ratio = (1 + math.sqrt(5)) / 2
     return round((golden_ratio ** n - (1 - golden_ratio) ** n) / math.sqrt(5))
 
 
-#Berechnet die ersten 30 Fibonacci-Zahlen mit der rekursiven Funktion
-#Gibt zusätzlich die jeweilige Anzahl Aufrufe der rekursiven Funktion und die benötigte Zeit aus
-print("Mittels rekursiver Funktion:")
 for i in range(number_of_calls):
-    counter = fib_calls(i, [0])[1][0]
-    start_time = time.perf_counter_ns()
-    fib_n = fib(i)
-    end_time = time.perf_counter_ns()
-    duration = end_time - start_time
-    print(
-        f"Die {i}.te Fibonacci-Zahl ist: {fib_n}; Anzahl der Aufrufe: {counter}; Dafür wurden {duration} Nanosekunden gebraucht")
-print()
-
-
-
-
-
-
-#Berechnet die ersten 30 Fibonacci-Zahlen mit der dynamischen Funktion
-#Gibt zusätzlich die benötigte Zeit aus
-total_time_dynamic = 0
-print("Mittels dynamischer Programmierung")
-for i in range(number_of_calls):
-    start_time = time.perf_counter_ns()
-    fib_dynamic(i)
-    end_time = time.perf_counter_ns()
-    duration = end_time - start_time
-    total_time_dynamic += duration
-    print(
-        f"Die {i}.te Fibonacci-Zahl ist: {fib(i)}; Dafür wurden {duration} Nanosekunden gebraucht")
-
-#Berechnet die durschnittlich benötigte Zeit und gibt sie aus
-average_time_dynamic = total_time_dynamic / number_of_calls
-print(f"Durchschnittliche Zeit der Berechnung: {round(average_time_dynamic)} Nanosekunden")
-print()
-
-
-
-
-
-#Berechnet die ersten 30 Fibonacci-Zahlen mit der Formel von Binet
-#Gibt zusätzlich die benötigte Zeit aus
-total_time_binet = 0
-print("Mittels Binets Formel")
-for i in range(number_of_calls):
-    start_time = time.perf_counter_ns()
-    fib_binet(i)
-    end_time = time.perf_counter_ns()
-    duration = end_time - start_time
-    total_time_binet += duration
-    print(
-        f"Die {i}.te Fibonacci-Zahl ist: {fib(i)}; Dafür wurden {duration} Nanosekunden gebraucht")
-
-#Berechnet die durchschnittlich benötigte Zeit und gibt sie aus
-average_time_binet = total_time_binet / number_of_calls
-print(f"Durchschnittliche Zeit der Berechnung: {round(average_time_binet)} Nanosekunden")
-print()
-
-
-
-
-
-
-
-#Berechnet 200 mal die ersten 30 Fibonacci-Zahlen mit der dynamischen Formel und Binets Formel
-#Berechnet die durchschnittlich benötigte Zeit
-
-gruendlich_testen = 200
-
-total_time_binet = 0
-total_time_dynamic = 0
-
-for i in range(gruendlich_testen):
-
-    for i in range(number_of_calls):
+    if i < 31:
+        print(f"{i}.te Fibonacci-Number:")
+        counter = fib_calls(i, [0])[1][0]
         start_time = time.perf_counter_ns()
-        fib_binet(i)
+        fib_result = fib(i)
         end_time = time.perf_counter_ns()
-        duration = end_time - start_time
-        total_time_binet += duration
+        duration_recursive = end_time - start_time
+        print(
+            f"Recursive:    {fib_result};   Needed time: {duration_recursive} Nanoseconds;  Number of calls: {counter}")
 
-    for i in range(number_of_calls):
-        start_time = time.perf_counter_ns()
-        fib_dynamic(i)
-        end_time = time.perf_counter_ns()
-        duration = end_time - start_time
-        total_time_dynamic += duration
 
-total_number_of_calls = gruendlich_testen*number_of_calls
+iterative_was_faster = 0
+dynamic_was_faster = 0
+for i in range(number_of_calls):
+    print(f"{i}.te Fibonacci-Number:")
 
-average_time_dynamic = total_time_dynamic / (total_number_of_calls)
-average_time_binet = total_time_binet / (total_number_of_calls)
+    start_time = time.perf_counter_ns()
+    fib_result = fib_dynamic(i)
+    end_time = time.perf_counter_ns()
+    duration_dynamic = end_time - start_time
+    print(
+        f"Dynamic:      {fib_result};   Needed time: {duration_dynamic} Nanoseconds;")
 
-print(f"Dynamische Funktion benötigte durschnittlich {round(average_time_dynamic)} Nanosekunden für {total_number_of_calls} Aufrufe")
-print(f"Funktion mit Binets Formel benötigte durschnittlich {round(average_time_binet)} Nanosekundenfür für {total_number_of_calls} Aufrufe")
+    start_time = time.perf_counter_ns()
+    fib_result = fib_iterative(i)
+    end_time = time.perf_counter_ns()
+    duration_iterative = end_time - start_time
+    print(
+        f"Iterative:    {fib_result};   Needed time: {duration_iterative} Nanoseconds;")
+
+    start_time = time.perf_counter_ns()
+    fib_result = fib_binet(i)
+    end_time = time.perf_counter_ns()
+    duration_binet = end_time - start_time
+    print(
+        f"With Binet:   {fib_result};   Needed time: {duration_binet} Nanoseconds;")
+
+    print()
+    if duration_dynamic < duration_iterative:
+        dynamic_was_faster += 1
+    if duration_iterative < duration_dynamic:
+        iterative_was_faster += 1
+
+print(f"Iterative was faster {iterative_was_faster} times")
+print(f"Dynamic was faster {dynamic_was_faster} times")
