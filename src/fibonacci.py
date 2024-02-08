@@ -2,7 +2,7 @@ import time
 import math
 
 # Number of Fibonacci numbers to calculate
-number_of_calls = 31
+number_of_calls = 101
 
 
 # Recursive Function
@@ -50,16 +50,28 @@ def fib_binet(n):
     return round((golden_ratio ** n - (1 - golden_ratio) ** n) / math.sqrt(5))
 
 
+print("With recursive function")
 for i in range(number_of_calls):
     if i < 31:
-        print(f"{i}.te Fibonacci-Number:")
         counter = fib_calls(i, [0])[1][0]
         start_time = time.perf_counter_ns()
         fib_result = fib(i)
         end_time = time.perf_counter_ns()
         duration_recursive = end_time - start_time
         print(
-            f"Recursive:    {fib_result};   Needed time: {duration_recursive} Nanoseconds;  Number of calls: {counter}")
+            f"{i}.te Fibonacci-Number:    {fib_result};   Needed time: {duration_recursive} Nanoseconds;  Number of calls: {counter}")
+print()
+
+
+print("With Binet's formula")
+for i in range(number_of_calls):
+    start_time = time.perf_counter_ns()
+    fib_result = fib_binet(i)
+    end_time = time.perf_counter_ns()
+    duration_binet = end_time - start_time
+    print(
+        f"{i}.te Fibonacci-Number:   {fib_result};   Needed time: {duration_binet} Nanoseconds;")
+print()
 
 
 iterative_was_faster = 0
@@ -80,13 +92,6 @@ for i in range(number_of_calls):
     duration_iterative = end_time - start_time
     print(
         f"Iterative:    {fib_result};   Needed time: {duration_iterative} Nanoseconds;")
-
-    start_time = time.perf_counter_ns()
-    fib_result = fib_binet(i)
-    end_time = time.perf_counter_ns()
-    duration_binet = end_time - start_time
-    print(
-        f"With Binet:   {fib_result};   Needed time: {duration_binet} Nanoseconds;")
 
     print()
     if duration_dynamic < duration_iterative:
