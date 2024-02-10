@@ -199,18 +199,18 @@ def test6():
             f"Dynamic:                {fib_result};   Needed time: {duration_dynamic} Nanoseconds;")
 
         start_time = time.perf_counter_ns()
-        fib_result = fib_iterative_replace(i)
-        end_time = time.perf_counter_ns()
-        duration_iterative_replace = end_time - start_time
-        print(
-            f"Iterative:              {fib_result};   Needed time: {duration_iterative_replace} Nanoseconds;")
-
-        start_time = time.perf_counter_ns()
         fib_result = fib_iterative_append(i)
         end_time = time.perf_counter_ns()
         duration_iterative_append = end_time - start_time
         print(
             f"Iterative_append:       {fib_result};   Needed time: {duration_iterative_append} Nanoseconds;")
+
+        start_time = time.perf_counter_ns()
+        fib_result = fib_iterative_replace(i)
+        end_time = time.perf_counter_ns()
+        duration_iterative_replace = end_time - start_time
+        print(
+            f"Iterative:              {fib_result};   Needed time: {duration_iterative_replace} Nanoseconds;")
 
         print()
         if duration_dynamic < duration_iterative_replace and duration_dynamic < duration_iterative_append:
@@ -234,18 +234,18 @@ def test7():
         print(f"{i}.te Fibonacci-Number:")
 
         start_time = time.perf_counter_ns()
-        fib_result = fib_dynamic(i)
-        end_time = time.perf_counter_ns()
-        duration_dynamic = end_time - start_time
-        print(
-            f"Dynamic:                {fib_result};   Needed time: {duration_dynamic} Nanoseconds;")
-
-        start_time = time.perf_counter_ns()
         fib_result = fib_iterative_replace(i)
         end_time = time.perf_counter_ns()
         duration_iterative_replace = end_time - start_time
         print(
             f"Iterative:              {fib_result};   Needed time: {duration_iterative_replace} Nanoseconds;")
+
+        start_time = time.perf_counter_ns()
+        fib_result = fib_dynamic(i)
+        end_time = time.perf_counter_ns()
+        duration_dynamic = end_time - start_time
+        print(
+            f"Dynamic:                {fib_result};   Needed time: {duration_dynamic} Nanoseconds;")
 
         start_time = time.perf_counter_ns()
         fib_result = fib_iterative_append(i)
@@ -276,13 +276,6 @@ def test8():
         print(f"{i}.te Fibonacci-Number:")
 
         start_time = time.perf_counter_ns()
-        fib_result = fib_dynamic(i)
-        end_time = time.perf_counter_ns()
-        duration_dynamic = end_time - start_time
-        print(
-            f"Dynamic:                {fib_result};   Needed time: {duration_dynamic} Nanoseconds;")
-
-        start_time = time.perf_counter_ns()
         fib_result = fib_iterative_replace(i)
         end_time = time.perf_counter_ns()
         duration_iterative_replace = end_time - start_time
@@ -295,6 +288,13 @@ def test8():
         duration_iterative_append = end_time - start_time
         print(
             f"Iterative_append:       {fib_result};   Needed time: {duration_iterative_append} Nanoseconds;")
+
+        start_time = time.perf_counter_ns()
+        fib_result = fib_dynamic(i)
+        end_time = time.perf_counter_ns()
+        duration_dynamic = end_time - start_time
+        print(
+            f"Dynamic:                {fib_result};   Needed time: {duration_dynamic} Nanoseconds;")
 
         print()
         if duration_dynamic < duration_iterative_replace and duration_dynamic < duration_iterative_append:
@@ -318,6 +318,13 @@ def test9():
         print(f"{i}.te Fibonacci-Number:")
 
         start_time = time.perf_counter_ns()
+        fib_result = fib_iterative_append(i)
+        end_time = time.perf_counter_ns()
+        duration_iterative_append = end_time - start_time
+        print(
+            f"Iterative_append:       {fib_result};   Needed time: {duration_iterative_append} Nanoseconds;")
+
+        start_time = time.perf_counter_ns()
         fib_result = fib_dynamic(i)
         end_time = time.perf_counter_ns()
         duration_dynamic = end_time - start_time
@@ -330,13 +337,6 @@ def test9():
         duration_iterative_replace = end_time - start_time
         print(
             f"Iterative:              {fib_result};   Needed time: {duration_iterative_replace} Nanoseconds;")
-
-        start_time = time.perf_counter_ns()
-        fib_result = fib_iterative_append(i)
-        end_time = time.perf_counter_ns()
-        duration_iterative_append = end_time - start_time
-        print(
-            f"Iterative_append:       {fib_result};   Needed time: {duration_iterative_append} Nanoseconds;")
 
         print()
         if duration_dynamic < duration_iterative_replace and duration_dynamic < duration_iterative_append:
@@ -360,11 +360,11 @@ def test10():
         print(f"{i}.te Fibonacci-Number:")
 
         start_time = time.perf_counter_ns()
-        fib_result = fib_dynamic(i)
+        fib_result = fib_iterative_append(i)
         end_time = time.perf_counter_ns()
-        duration_dynamic = end_time - start_time
+        duration_iterative_append = end_time - start_time
         print(
-            f"Dynamic:                {fib_result};   Needed time: {duration_dynamic} Nanoseconds;")
+            f"Iterative_append:       {fib_result};   Needed time: {duration_iterative_append} Nanoseconds;")
 
         start_time = time.perf_counter_ns()
         fib_result = fib_iterative_replace(i)
@@ -374,11 +374,11 @@ def test10():
             f"Iterative:              {fib_result};   Needed time: {duration_iterative_replace} Nanoseconds;")
 
         start_time = time.perf_counter_ns()
-        fib_result = fib_iterative_append(i)
+        fib_result = fib_dynamic(i)
         end_time = time.perf_counter_ns()
-        duration_iterative_append = end_time - start_time
+        duration_dynamic = end_time - start_time
         print(
-            f"Iterative_append:       {fib_result};   Needed time: {duration_iterative_append} Nanoseconds;")
+            f"Dynamic:                {fib_result};   Needed time: {duration_dynamic} Nanoseconds;")
 
         print()
         if duration_dynamic < duration_iterative_replace and duration_dynamic < duration_iterative_append:
