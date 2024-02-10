@@ -2,7 +2,7 @@ import time
 import math
 
 # Number of Fibonacci numbers to calculate
-number_of_calls = 101
+number_of_calls = 1001
 
 # Number of Fibonacci numbers to calculate with recursive
 number_of_calls_for_recursive = 31
@@ -127,7 +127,7 @@ def test4():
 
     total_binet_time = 0
     for i in range(number_of_calls_for_recursive):
-        fib_result = fib(i)
+        fib_result = fib(number_of_calls_for_recursive)
         start_time = time.perf_counter_ns()
         fib_result = fib_binet(i)
         end_time = time.perf_counter_ns()
