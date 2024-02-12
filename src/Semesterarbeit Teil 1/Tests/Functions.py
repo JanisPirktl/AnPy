@@ -19,7 +19,9 @@ def fib_calls(n, counter):
     if n <= 1:
         return n, counter
     else:
-        return fib_calls(n - 1, counter) + fib_calls(n - 2, counter)
+        n_1, counter = fib_calls(n-1, counter)
+        n_2, counter = fib_calls(n-2, counter)
+        return n_1 + n_2, counter
 
 
 # Instantiate a "Buffer" list to avoid doing redundant calculations
@@ -36,17 +38,18 @@ def buffered_fib(n):
     if buffer[n] != -1:
         return buffer[n]
     if buffer[n - 1] != -1:
-        y = buffer[n - 1]
+        n_1 = buffer[n - 1]
     else:
-        y = buffered_fib(n - 1)
-        buffer[n - 1] = y
+        n_1 = buffered_fib(n - 1)
+        buffer[n - 1] = n_1
     if buffer[n - 2] != -1:
-        z = buffer[n - 2]
+        n_2 = buffer[n - 2]
     else:
-        z = buffered_fib(n - 2)
-        buffer[n - 2] = z
-    x = y + z
-    return x
+        n_2 = buffered_fib(n - 2)
+        buffer[n - 2] = n_2
+    return n_1 + n_2
+
+
 
 
 # Function with dynamic programming, instantiates an emtpy array and fills it with fibonacci-numbers

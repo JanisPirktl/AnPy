@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cb8e4d6-86ed-4f04-a4d2-0b0def24be46" name="Changes" comment="try higher numbers">
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests.py" afterDir="false" />
+    <list default="true" id="7cb8e4d6-86ed-4f04-a4d2-0b0def24be46" name="Changes" comment="reorganizing project structure">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fibonacci.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,11 +42,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Functions.executor": "Run",
     "Python.Main.executor": "Run",
     "Python.Test.executor": "Run",
+    "Python.Test1.executor": "Run",
+    "Python.Test2.executor": "Run",
+    "Python.Test3.executor": "Run",
+    "Python.Test4.executor": "Run",
+    "Python.Test5.executor": "Run",
+    "Python.Test6.executor": "Run",
     "Python.fibonacci.executor": "Run",
+    "Python.testestets.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -54,6 +68,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Janis Pirktl\PycharmProjects\Analysis Python\src\Semesterarbeit Teil 1\Tests" />
       <recent name="C:\Users\Janis Pirktl\PycharmProjects\Analysis Python\src\Semesterarbeit Teil 1" />
       <recent name="C:\Users\Janis Pirktl\PycharmProjects\Analysis Python\src" />
     </key>
@@ -89,7 +104,9 @@
       <workItem from="1707568604045" duration="4061000" />
       <workItem from="1707579262353" duration="921000" />
       <workItem from="1707594055547" duration="125000" />
-      <workItem from="1707596523168" duration="823000" />
+      <workItem from="1707596523168" duration="847000" />
+      <workItem from="1707756247602" duration="596000" />
+      <workItem from="1707770706975" duration="8167000" />
     </task>
     <task id="LOCAL-00001" summary="Set Basics">
       <option name="closed" value="true" />
@@ -179,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707562436326</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="reorganizing project structure">
+      <option name="closed" value="true" />
+      <created>1707597366214</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1707597366214</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,11 +220,20 @@
     <MESSAGE value="now its perfect" />
     <MESSAGE value="enhanced testing" />
     <MESSAGE value="try higher numbers" />
-    <option name="LAST_COMMIT_MESSAGE" value="try higher numbers" />
+    <MESSAGE value="reorganizing project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="reorganizing project structure" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Analysis_Python$Test4.coverage" NAME="Test4 Coverage Results" MODIFIED="1707778062493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test.coverage" NAME="Test Coverage Results" MODIFIED="1707235959002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Main.coverage" NAME="Main Coverage Results" MODIFIED="1707596858778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Test3.coverage" NAME="Test3 Coverage Results" MODIFIED="1707775455926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Functions.coverage" NAME="Functions Coverage Results" MODIFIED="1707776169888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Test1.coverage" NAME="Test1 Coverage Results" MODIFIED="1707774368892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$fibonacci.coverage" NAME="fibonacci Coverage Results" MODIFIED="1707572670697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Test5.coverage" NAME="Test5 Coverage Results" MODIFIED="1707778022954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$testestets.coverage" NAME="testestets Coverage Results" MODIFIED="1707776173090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Test6.coverage" NAME="Test6 Coverage Results" MODIFIED="1707778807135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1707774495283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
   </component>
 </project>
