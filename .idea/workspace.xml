@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cb8e4d6-86ed-4f04-a4d2-0b0def24be46" name="Changes" comment="getting it on">
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test11.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test9.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test13.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test8.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test8.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test11.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test11.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,9 @@
     "Python.Test.executor": "Run",
     "Python.Test1.executor": "Run",
     "Python.Test10.executor": "Run",
+    "Python.Test11.executor": "Run",
+    "Python.Test12.executor": "Run",
+    "Python.Test13.executor": "Run",
     "Python.Test2.executor": "Run",
     "Python.Test3.executor": "Run",
     "Python.Test4.executor": "Run",
@@ -108,7 +111,7 @@
       <workItem from="1707770706975" duration="8184000" />
       <workItem from="1707812786970" duration="1303000" />
       <workItem from="1707820005661" duration="3280000" />
-      <workItem from="1707829116246" duration="608000" />
+      <workItem from="1707829116246" duration="3778000" />
     </task>
     <task id="LOCAL-00001" summary="Set Basics">
       <option name="closed" value="true" />
@@ -222,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707829102348</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="getting it on">
+      <option name="closed" value="true" />
+      <created>1707829733551</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1707829733551</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,20 +254,23 @@
     <option name="LAST_COMMIT_MESSAGE" value="getting it on" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Analysis_Python$Test4.coverage" NAME="Test4 Coverage Results" MODIFIED="1707829367398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Test4.coverage" NAME="Test4 Coverage Results" MODIFIED="1707833315832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test.coverage" NAME="Test Coverage Results" MODIFIED="1707235959002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Main.coverage" NAME="Main Coverage Results" MODIFIED="1707596858778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test7.coverage" NAME="Test7 Coverage Results" MODIFIED="1707829459052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test10.coverage" NAME="Test10 Coverage Results" MODIFIED="1707829693525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Test13.coverage" NAME="Test13 Coverage Results" MODIFIED="1707844884937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Functions.coverage" NAME="Functions Coverage Results" MODIFIED="1707776169888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
-    <SUITE FILE_PATH="coverage/Analysis_Python$Test1.coverage" NAME="Test1 Coverage Results" MODIFIED="1707829280881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Test1.coverage" NAME="Test1 Coverage Results" MODIFIED="1707833248905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$fibonacci.coverage" NAME="fibonacci Coverage Results" MODIFIED="1707572670697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test5.coverage" NAME="Test5 Coverage Results" MODIFIED="1707829393429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$testestets.coverage" NAME="testestets Coverage Results" MODIFIED="1707776173090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test6.coverage" NAME="Test6 Coverage Results" MODIFIED="1707829408054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
-    <SUITE FILE_PATH="coverage/Analysis_Python$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1707829302675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1707833257370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test9.coverage" NAME="Test9 Coverage Results" MODIFIED="1707829607931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
-    <SUITE FILE_PATH="coverage/Analysis_Python$Test3.coverage" NAME="Test3 Coverage Results" MODIFIED="1707829333213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Test11.coverage" NAME="Test11 Coverage Results" MODIFIED="1707833361677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Test3.coverage" NAME="Test3 Coverage Results" MODIFIED="1707845903362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test8.coverage" NAME="Test8 Coverage Results" MODIFIED="1707829602751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Test12.coverage" NAME="Test12 Coverage Results" MODIFIED="1707844643925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
   </component>
 </project>

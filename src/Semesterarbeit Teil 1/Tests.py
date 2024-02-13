@@ -1,5 +1,5 @@
 import time
-import Functions as F
+
 
 # Number of Fibonacci numbers to calculate
 number_of_calls = 1001
