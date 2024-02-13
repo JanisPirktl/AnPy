@@ -11,7 +11,7 @@ buffer = []
 
 def test5():
     print(
-        f"Measure the time needed to calculate the 999-th fibonacci-number with buffered recursive function")
+        f"Measure the average time needed to calculate the 999-th fibonacci-number with buffered recursive function")
 
     F.instantiate_buffer(number_of_calls)
     total_time = 0

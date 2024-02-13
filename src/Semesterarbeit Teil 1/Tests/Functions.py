@@ -50,13 +50,12 @@ def buffered_fib(n):
     return n_1 + n_2
 
 
-
-
 # Function with dynamic programming, instantiates an emtpy array and fills it with fibonacci-numbers
-def fib_dynamic(n):
+def fib_iterative_dynamic(n):
     if n <= 1:
         return n
     fib_numbers = [0, 1] + [0] * (n - 1)
+
     for i in range(2, n + 1):
         fib_numbers[i] = fib_numbers[i - 1] + fib_numbers[i - 2]
     return fib_numbers[n]
@@ -82,6 +81,37 @@ def fib_iterative_append(n):
     for i in range(1, n):
         fib_numbers.append((fib_numbers[-1] + fib_numbers[-2]))
     return fib_numbers[-1]
+
+
+def fib_iterative_buffered(n):
+    global buffer
+    if n <= 1:
+        return n
+    if buffer[n] != -1:
+        return buffer[n]
+    if buffer[n - 1] != -1 and buffer[n - 2] != -1:
+        buffer[n] = buffer[n - 1] + buffer[n - 2]
+        return buffer[n]
+    for i in range(2, n + 1):
+        buffer[i] = buffer[i - 1] + buffer[i - 2]
+    return buffer[n]
+
+
+def fib_iterative_buffered_non_global_buffer(n):
+    buffer = [-1] * (n + 1)
+    buffer[0] = 0
+    buffer[1] = 1
+    if n <= 1:
+        return n
+    if buffer[n] != -1:
+        return buffer[n]
+    if buffer[n - 1] != -1 and buffer[n - 2] != -1:
+        buffer[n] = buffer[n - 1] + buffer[n - 2]
+        return buffer[n]
+    for i in range(2, n + 1):
+        buffer[i] = buffer[i - 1] + buffer[i - 2]
+    return buffer[n]
+
 
 
 # Function with Binet's formula

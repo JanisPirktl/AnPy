@@ -2,11 +2,12 @@ import Functions as F
 import time
 import matplotlib.pyplot as plt
 
-number_of_calls = 15001
+number_of_calls = 10001
 x_values = []
 y_values_dynamic = []
 y_values_append = []
 y_values_replace = []
+
 
 def test6():
     print(
@@ -14,12 +15,13 @@ def test6():
 
     for i in range(number_of_calls):
 
+        x_values.append(i)
+
         start_time = time.perf_counter_ns()
-        fib_result = F.fib_dynamic(i)
+        fib_result = F.fib_iterative_dynamic(i)
         end_time = time.perf_counter_ns()
         duration = end_time - start_time
         print(f"DYNAMIC - {i}.te Fibonacci-Number: {fib_result}; Time needed: {duration}")
-        x_values.append(i)
         y_values_dynamic.append(duration)
 
         start_time = time.perf_counter_ns()
