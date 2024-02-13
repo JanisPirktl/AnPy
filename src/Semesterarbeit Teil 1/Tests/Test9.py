@@ -2,12 +2,12 @@ import Functions as F
 import time
 import matplotlib.pyplot as plt
 
-number_of_calls = 5001
+number_of_calls = 20001
 x_values = []
 y_values_replace = []
 y_values_buffered = []
 
-def test8():
+def test9():
     print(
         f"Measure and compare the average time needed to calculate the {number_of_calls-1}-th fibonacci-number with iterative functions")
 
@@ -50,4 +50,4 @@ def test8():
     plt.show()
 
 
-test8()
+test9()
