@@ -15,7 +15,7 @@ def fib(n):
 
 # Function to count the function calls of the recursive function
 def fib_calls(n, counter):
-    counter[0] += 1
+    counter += 1
     if n <= 1:
         return n, counter
     else:
