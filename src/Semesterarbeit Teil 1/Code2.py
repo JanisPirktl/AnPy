@@ -16,7 +16,7 @@ x_values = []
 y_values = []
 
 
-def test2():
+def code2():
     print(f"Calculate the number of recursive calls required for the n-th fibonacci-number")
 
     for i in range(number_of_calls):
@@ -32,4 +32,4 @@ def test2():
     plt.show()
 
 
-test2()
+code2()

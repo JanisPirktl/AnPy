@@ -14,11 +14,12 @@ x_values = []
 y_values = []
 
 
-def test3():
-    print(f"Measure the time needed to calculate the n-th fibonacci-number with recursive function")
+def code3():
+    print(f"Measure the time needed to calculate {number_of_calls-1} fibonacci-numbers with recursive function")
 
     for i in range(number_of_calls):
         fib_result = fib(i)
+        x_values.append(i)
         time_total = 0
 
         for j in range(100):
@@ -32,7 +33,7 @@ def test3():
         print(
             f"{i}.te Fibonacci-Number: {fib_result}; Time needed: {round(average_duration)}"
             f" nanoseconds")
-        x_values.append(i)
+
         y_values.append(average_duration)
 
     plt.xlabel("n-th Fibonacci Number")
@@ -42,4 +43,4 @@ def test3():
     plt.show()
 
 
-test3()
+code3()

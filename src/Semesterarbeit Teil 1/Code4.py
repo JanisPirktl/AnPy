@@ -32,9 +32,9 @@ y_values = []
 buffer = []
 
 
-def test4():
+def code4():
     print(
-        f"Measure the time needed to calculate the n-th fibonacci-number with buffered recursive function")
+        f"Measure the time needed to calculate {number_of_calls-1} fibonacci-numbers with buffered recursive function")
 
     instantiate_buffer(number_of_calls)
 
@@ -56,4 +56,4 @@ def test4():
     plt.show()
 
 
-test4()
+code4()
