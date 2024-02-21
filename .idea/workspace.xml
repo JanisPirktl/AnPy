@@ -5,34 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cb8e4d6-86ed-4f04-a4d2-0b0def24be46" name="Changes" comment="getting it on">
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code11.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Code99.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code13.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Code1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Code2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Code3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Code4.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test10.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test11.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test12.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test13.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test14.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test15.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test5.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test6.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test7.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test8.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Test9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code10.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code11.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code11.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code12.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code9.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests/Code99.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,56 +37,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Code1.executor": "Run",
-    "Python.Code10.executor": "Run",
-    "Python.Code11.executor": "Run",
-    "Python.Code12.executor": "Run",
-    "Python.Code2.executor": "Run",
-    "Python.Code3.executor": "Run",
-    "Python.Code4.executor": "Run",
-    "Python.Code5.executor": "Run",
-    "Python.Code6.executor": "Run",
-    "Python.Code7.executor": "Run",
-    "Python.Code8.executor": "Run",
-    "Python.Code9.executor": "Run",
-    "Python.Code99.executor": "Run",
-    "Python.Functions.executor": "Run",
-    "Python.Main.executor": "Run",
-    "Python.Test.executor": "Run",
-    "Python.Test1.executor": "Run",
-    "Python.Test10.executor": "Run",
-    "Python.Test11.executor": "Run",
-    "Python.Test12.executor": "Run",
-    "Python.Test13.executor": "Run",
-    "Python.Test14.executor": "Run",
-    "Python.Test15.executor": "Run",
-    "Python.Test2.executor": "Run",
-    "Python.Test3.executor": "Run",
-    "Python.Test4.executor": "Run",
-    "Python.Test5.executor": "Run",
-    "Python.Test6.executor": "Run",
-    "Python.Test7.executor": "Run",
-    "Python.Test8.executor": "Run",
-    "Python.Test9.executor": "Run",
-    "Python.fibonacci.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.testestets.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Dokumente und Einstellungen",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Code1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code10.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code8.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code9.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code99.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test10.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test13.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test14.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test15.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test8.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test9.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fibonacci.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testestets.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Dokumente und Einstellungen&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Dokumente und Einstellungen" />
@@ -160,7 +139,9 @@
       <workItem from="1708362961094" duration="10383000" />
       <workItem from="1708421358408" duration="16136000" />
       <workItem from="1708442806699" duration="6923000" />
-      <workItem from="1708459689831" duration="1561000" />
+      <workItem from="1708459689831" duration="1579000" />
+      <workItem from="1708494616803" duration="18000" />
+      <workItem from="1708514157637" duration="1755000" />
     </task>
     <task id="LOCAL-00001" summary="Set Basics">
       <option name="closed" value="true" />
@@ -298,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708378207553</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="getting it on">
+      <option name="closed" value="true" />
+      <created>1708461265769</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1708461265769</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +316,7 @@
     <SUITE FILE_PATH="coverage/Analysis_Python$Code7.coverage" NAME="Code7 Coverage Results" MODIFIED="1708447052826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Code4.coverage" NAME="Code4 Coverage Results" MODIFIED="1708375536031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$fibonacci.coverage" NAME="fibonacci Coverage Results" MODIFIED="1707572670697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/Analysis_Python$Code99.coverage" NAME="Code99 Coverage Results" MODIFIED="1708461003735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Code99.coverage" NAME="Code99 Coverage Results" MODIFIED="1708515536358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test14.coverage" NAME="Test14 Coverage Results" MODIFIED="1707847835668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test3.coverage" NAME="Test3 Coverage Results" MODIFIED="1708372187375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Code12.coverage" NAME="Code12 Coverage Results" MODIFIED="1708461246419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1" />

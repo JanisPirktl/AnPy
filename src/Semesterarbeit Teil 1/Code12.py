@@ -1,19 +1,5 @@
 import time
 import matplotlib.pyplot as plt
-import decimal
-import sys
-import numpy as np
-
-
-def fib_iterative_replace(n):
-    if n <= 1:
-        return n
-    fib_numbers = [0, 1]
-    for i in range(1, n):
-        current = fib_numbers[0]
-        fib_numbers[0] = fib_numbers[1]
-        fib_numbers[1] = current + fib_numbers[0]
-    return fib_numbers[1]
 
 
 def instantiate_buffer_recursive(n):
@@ -61,91 +47,42 @@ def fib_iterative_buffered(n):
     return buffer_iterative[n]
 
 
-def set_precision(precision):
-    decimal.getcontext().prec = precision
-    five = decimal.Decimal(5)
-    return five.sqrt()
-
-
-def fib_binet_precision(n, sqrt_of_5):
-    golden_ratio = (1 + sqrt_of_5) / 2
-    return round((golden_ratio ** n - (1 - golden_ratio) ** n) / sqrt_of_5)
-
-
+number_of_calls = 1001
 buffer_recursive = []
 buffer_iterative = []
 x_values = []
-y_values_binet = []
 y_values_iterative_buffered = []
 y_values_recursive_buffered = []
-y_values_iterative_replace = []
-sys.setrecursionlimit(20500)
 
 
 def code12():
-    print(f"Measure and compare the time needed to calculate single fibonacci-numbers with with all "
+    print(f"Measure and compare the time needed to calculate {number_of_calls-1} fibonacci-numbers with with buffered "
           f"functions")
+    instantiate_buffer_iterative(number_of_calls)
+    instantiate_buffer_recursive(number_of_calls)
 
-
-    for i in range(1000, 11000, 1000):
+    for i in range(number_of_calls):
         x_values.append(i)
-        instantiate_buffer_iterative(i)
-        instantiate_buffer_recursive(i)
-        sqrt_of_5 = set_precision(round(i/4.75))
-
-        total_time = 0
-        for j in range(100):
-            start_time = time.perf_counter_ns()
-            fib_result_iterative_replace = fib_iterative_replace(i)
-            end_time = time.perf_counter_ns()
-            duration = end_time - start_time
-            total_time += duration
-
-        average_time = total_time / 100
-        print(f"ITERATIVE REPLACE -  {i}.te Fibonacci-Number: {fib_result_iterative_replace}; Time needed: {round(average_time)}")
-        y_values_iterative_replace.append(average_time)
 
         start_time = time.perf_counter_ns()
-        fib_result_iterative_buffered = fib_iterative_buffered(i)
+        fib_result = fib_iterative_buffered(i)
         end_time = time.perf_counter_ns()
         duration = end_time - start_time
-        print(f"ITERATIVE BUFFERED - {i}.te Fibonacci-Number: {fib_result_iterative_buffered}; Time needed: {duration}")
+        print(f"ITERATIVE BUFFERED - {i}.te Fibonacci-Number: {fib_result}; Time needed: {duration}")
         y_values_iterative_buffered.append(duration)
 
         start_time = time.perf_counter_ns()
-        fib_result_recursive_buffered = buffered_fib(i)
+        fib_result = buffered_fib(i)
         end_time = time.perf_counter_ns()
         duration = end_time - start_time
-        print(f"RECURSIVE BUFFERED - {i}.te Fibonacci-Number: {fib_result_recursive_buffered}; Time needed: {duration}")
+        print(f"RECURSIVE BUFFERED - {i}.te Fibonacci-Number: {fib_result}; Time needed: {duration}")
         y_values_recursive_buffered.append(duration)
-
-        start_time = time.perf_counter_ns()
-        fib_result_binet = fib_binet_precision(i, sqrt_of_5)
-        end_time = time.perf_counter_ns()
-        duration = end_time - start_time
-
-        print(f"BINET ENHANCED -     {i}.te Fibonacci-Number: {fib_result_binet}; Time needed: {round(duration)}")
-        y_values_binet.append(duration)
-
-        if fib_result_binet != fib_result_recursive_buffered or fib_result_binet != fib_result_iterative_buffered:
-            print(f"RESULTS DO NOT MATCH AT {i}-th NUMBER!")
 
     plt.xlabel("n-th Fibonacci Number")
     plt.ylabel("Time needed in Nanoseconds")
 
-    bar_width = 0.2
-    r1 = np.arange(len(y_values_iterative_replace))
-    r2 = [x + bar_width for x in r1]
-    r3 = [x + bar_width for x in r2]
-    r4 = [x + bar_width for x in r3]
-
-    x_labels = ['1000', '2000', '3000', '4000', '5000', '6000', '7000', '8000', '9000', '10000']
-    plt.xticks([r + bar_width for r in range(len(y_values_iterative_replace))], x_labels)
-
-    plt.bar(r1, y_values_iterative_replace, label='Iterative-Replace', color='red', width=bar_width, edgecolor='grey')
-    plt.bar(r2, y_values_iterative_buffered, label='Iterative-Buffered', color='green', width=bar_width, edgecolor='grey')
-    plt.bar(r3, y_values_recursive_buffered, label='Recursive-Buffered', color='yellow', width=bar_width, edgecolor='grey')
-    plt.bar(r4, y_values_binet, label='Binet', color='blue', width=bar_width, edgecolor='grey')
+    plt.plot(x_values, y_values_iterative_buffered, label='Iterative-Buffered', color='blue')
+    plt.plot(x_values, y_values_recursive_buffered, label='Recursive-Buffered', color='red')
 
     plt.legend()
     plt.show()
