@@ -81,8 +81,8 @@ def code12():
     plt.xlabel("n-th Fibonacci Number")
     plt.ylabel("Time needed in Nanoseconds")
 
-    plt.plot(x_values, y_values_iterative_buffered, label='Iterative-Buffered', color='blue')
-    plt.plot(x_values, y_values_recursive_buffered, label='Recursive-Buffered', color='red')
+    plt.plot(x_values, y_values_iterative_buffered, label='Iterative-Buffered', color='green')
+    plt.plot(x_values, y_values_recursive_buffered, label='Recursive-Buffered', color='orange')
 
     plt.legend()
     plt.show()

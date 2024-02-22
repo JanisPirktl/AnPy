@@ -132,7 +132,7 @@ def code11():
 
     plt.plot(x_values, y_values_iterative_replace, label='Iterative-Replace', color='red')
     plt.plot(x_values, y_values_iterative_buffered, label='Iterative-Buffered', color='green')
-    plt.plot(x_values, y_values_recursive_buffered, label='Recursive-Buffered', color='yellow')
+    plt.plot(x_values, y_values_recursive_buffered, label='Recursive-Buffered', color='orange')
     plt.plot(x_values, y_values_binet, label='Binet', color='blue')
 
     plt.legend()

@@ -144,7 +144,7 @@ def code13():
 
     plt.bar(r1, y_values_iterative_replace, label='Iterative-Replace', color='red', width=bar_width, edgecolor='grey')
     plt.bar(r2, y_values_iterative_buffered, label='Iterative-Buffered', color='green', width=bar_width, edgecolor='grey')
-    plt.bar(r3, y_values_recursive_buffered, label='Recursive-Buffered', color='yellow', width=bar_width, edgecolor='grey')
+    plt.bar(r3, y_values_recursive_buffered, label='Recursive-Buffered', color='orange', width=bar_width, edgecolor='grey')
     plt.bar(r4, y_values_binet, label='Binet', color='blue', width=bar_width, edgecolor='grey')
 
     plt.legend()
