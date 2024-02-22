@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cb8e4d6-86ed-4f04-a4d2-0b0def24be46" name="Changes" comment="getting it on">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code11.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code12.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code13.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Code13.py" afterDir="false" />
-    </list>
+    <list default="true" id="7cb8e4d6-86ed-4f04-a4d2-0b0def24be46" name="Changes" comment="Done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +136,7 @@
       <workItem from="1708459689831" duration="1579000" />
       <workItem from="1708494616803" duration="18000" />
       <workItem from="1708514157637" duration="1795000" />
-      <workItem from="1708620725060" duration="2572000" />
+      <workItem from="1708620725060" duration="3134000" />
     </task>
     <task id="LOCAL-00001" summary="Set Basics">
       <option name="closed" value="true" />
@@ -295,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708515943737</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Done">
+      <option name="closed" value="true" />
+      <created>1708625937758</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1708625937758</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +316,8 @@
     <MESSAGE value="try higher numbers" />
     <MESSAGE value="reorganizing project structure" />
     <MESSAGE value="getting it on" />
-    <option name="LAST_COMMIT_MESSAGE" value="getting it on" />
+    <MESSAGE value="Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Analysis_Python$Test4.coverage" NAME="Test4 Coverage Results" MODIFIED="1707833315832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
