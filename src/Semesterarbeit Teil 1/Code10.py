@@ -13,7 +13,6 @@ y_values_binet = []
 y_values_iterative = []
 
 
-
 def code10():
     print(f"Show that the average time needed for binet's function is misleading")
     time_total = 0
