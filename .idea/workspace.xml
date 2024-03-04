@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cb8e4d6-86ed-4f04-a4d2-0b0def24be46" name="Changes" comment="Done">
-      <change afterPath="$PROJECT_DIR$/src/Zahlensysteme/Umrechner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Zahlensysteme/Binärbruch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Zahlensysteme/BinärbruchMitGewünschterAnzahlNachkommastellen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Zahlensysteme/Zweierkomplement.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zahlensysteme/Umrechner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zahlensysteme/Umrechner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,59 +35,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Code1.executor": "Run",
-    "Python.Code10.executor": "Run",
-    "Python.Code11.executor": "Run",
-    "Python.Code12.executor": "Run",
-    "Python.Code13.executor": "Run",
-    "Python.Code14.executor": "Run",
-    "Python.Code2.executor": "Run",
-    "Python.Code3.executor": "Run",
-    "Python.Code4.executor": "Run",
-    "Python.Code5.executor": "Run",
-    "Python.Code6.executor": "Run",
-    "Python.Code7.executor": "Run",
-    "Python.Code8.executor": "Run",
-    "Python.Code9.executor": "Run",
-    "Python.Code99.executor": "Run",
-    "Python.Functions.executor": "Run",
-    "Python.Main.executor": "Run",
-    "Python.Test.executor": "Run",
-    "Python.Test1.executor": "Run",
-    "Python.Test10.executor": "Run",
-    "Python.Test11.executor": "Run",
-    "Python.Test12.executor": "Run",
-    "Python.Test13.executor": "Run",
-    "Python.Test14.executor": "Run",
-    "Python.Test15.executor": "Run",
-    "Python.Test2.executor": "Run",
-    "Python.Test3.executor": "Run",
-    "Python.Test4.executor": "Run",
-    "Python.Test5.executor": "Run",
-    "Python.Test6.executor": "Run",
-    "Python.Test7.executor": "Run",
-    "Python.Test8.executor": "Run",
-    "Python.Test9.executor": "Run",
-    "Python.Umrechner.executor": "Run",
-    "Python.fibonacci.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.testestets.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Dokumente und Einstellungen",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Binärbruch.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Binärbruch2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.BinärbruchMitGewünschterAnzahlNachkommastellen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code10.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code13.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code14.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code8.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code9.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Code99.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test10.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test13.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test14.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test15.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test8.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test9.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Umrechner.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Zweierkomplement.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fibonacci.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testestets.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Dokumente und Einstellungen&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Dokumente und Einstellungen" />
@@ -143,7 +150,9 @@
       <workItem from="1708620725060" duration="3170000" />
       <workItem from="1708793463300" duration="1307000" />
       <workItem from="1708795176922" duration="57000" />
-      <workItem from="1709490687139" duration="693000" />
+      <workItem from="1709490687139" duration="824000" />
+      <workItem from="1709495880244" duration="1989000" />
+      <workItem from="1709538384203" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="Set Basics">
       <option name="closed" value="true" />
@@ -321,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708794926758</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Done">
+      <option name="closed" value="true" />
+      <created>1709491389373</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1709491389373</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,6 +372,7 @@
     <SUITE FILE_PATH="coverage/Analysis_Python$Test14.coverage" NAME="Test14 Coverage Results" MODIFIED="1707847835668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test3.coverage" NAME="Test3 Coverage Results" MODIFIED="1708372187375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Code12.coverage" NAME="Code12 Coverage Results" MODIFIED="1708622325820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Zweierkomplement.coverage" NAME="Zweierkomplement Coverage Results" MODIFIED="1709498130936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Zahlensysteme" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test8.coverage" NAME="Test8 Coverage Results" MODIFIED="1707829602751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test12.coverage" NAME="Test12 Coverage Results" MODIFIED="1707844643925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test15.coverage" NAME="Test15 Coverage Results" MODIFIED="1707847977493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
@@ -368,10 +386,13 @@
     <SUITE FILE_PATH="coverage/Analysis_Python$Test13.coverage" NAME="Test13 Coverage Results" MODIFIED="1707847362800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Code5.coverage" NAME="Code5 Coverage Results" MODIFIED="1708425808462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Code10.coverage" NAME="Code10 Coverage Results" MODIFIED="1708794914139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Binärbruch.coverage" NAME="Binärbruch Coverage Results" MODIFIED="1709497646530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Zahlensysteme" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test5.coverage" NAME="Test5 Coverage Results" MODIFIED="1707829393429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Binärbruch2.coverage" NAME="Binärbruch2 Coverage Results" MODIFIED="1709497705146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Zahlensysteme" />
     <SUITE FILE_PATH="coverage/Analysis_Python$testestets.coverage" NAME="testestets Coverage Results" MODIFIED="1707776173090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test6.coverage" NAME="Test6 Coverage Results" MODIFIED="1708421906331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1708372153601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$BinärbruchMitGewünschterAnzahlNachkommastellen.coverage" NAME="BinärbruchMitGewünschterAnzahlNachkommastellen Coverage Results" MODIFIED="1709497822852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Zahlensysteme" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test9.coverage" NAME="Test9 Coverage Results" MODIFIED="1707847501034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Code9.coverage" NAME="Code9 Coverage Results" MODIFIED="1708460637227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Test11.coverage" NAME="Test11 Coverage Results" MODIFIED="1707833361677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
@@ -379,6 +400,6 @@
     <SUITE FILE_PATH="coverage/Analysis_Python$Code14.coverage" NAME="Code14 Coverage Results" MODIFIED="1708625957638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Code11.coverage" NAME="Code11 Coverage Results" MODIFIED="1708623130353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1" />
     <SUITE FILE_PATH="coverage/Analysis_Python$Code6.coverage" NAME="Code6 Coverage Results" MODIFIED="1708428301727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Semesterarbeit Teil 1/Tests" />
-    <SUITE FILE_PATH="coverage/Analysis_Python$Umrechner.coverage" NAME="Umrechner Coverage Results" MODIFIED="1709491365796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Zahlensysteme" />
+    <SUITE FILE_PATH="coverage/Analysis_Python$Umrechner.coverage" NAME="Umrechner Coverage Results" MODIFIED="1709497007405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Zahlensysteme" />
   </component>
 </project>

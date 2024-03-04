@@ -13,7 +13,7 @@ def umrechnen(zahl, eingabe_basis, ziel_basis):
         print(f"{umgerechnete_zahl} (Basis {ziel_basis})")
 
 
-umrechnen(12345, 16, 10)
+umrechnen(40, 10, 2)
 
 
 
