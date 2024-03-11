@@ -9,7 +9,7 @@ def teilsumme(n, p):
 
 def code2(n):
 
-    p_werte = np.arange(0.5, 2.5, 0.1)
+    p_werte = np.arange(0.5, 2.1, 0.1)
     teilsumme_werte = []
 
     for p in p_werte:
@@ -17,10 +17,11 @@ def code2(n):
 
     plt.plot(p_werte, teilsumme_werte, marker='o', linestyle='-', color='blue')
     plt.axvline(x=1, color='green', linestyle='--', label='Grenze p=1')
-    plt.title('Konvergenzverhalten der p-Reihe')
     plt.xlabel('Exponent p')
-    plt.ylabel('Teilsumme der ersten 10000 Terme')
-    plt.legend()
+    plt.ylabel(f'Teilsumme der ersten {n} Terme')
+    plt.title("p-Werte zwischen 0.5 und 2")
+
+    plt.legend(framealpha=1)
     plt.grid(True)
     plt.show()
 

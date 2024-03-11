@@ -9,25 +9,26 @@ def teilsummen(n, p):
 
 def code1(n):
 
-    x_werte = np.arange(1, n + 1)
-    p_werte = np.arange(0.75, 1.25, 0.05)
+    p_werte = np.arange(0.85, 1.25, 0.05)
 
     for p in p_werte:
         teilsummen_werte = teilsummen(n, p)
         color = "red" if p > 1 else "blue"
-        plt.plot(x_werte, teilsummen_werte, color=color)
+        plt.plot(teilsummen_werte, color=color)
 
     plt.plot([], [], label="p <= 1", color="blue")
     plt.plot([], [], label="p > 1", color="red")
 
     plt.xlabel("Anzahl Summenglieder")
     plt.ylabel("Teilsumme der Summenglieder")
+    plt.title("p-Werte zwischen 0.85 und 1.2")
 
-    plt.legend()
+    plt.legend(framealpha=1)
+    plt.grid(True)
     plt.show()
 
 
-code1(10000)
+code1(100000)
 
 
 

@@ -1,22 +1,15 @@
-import math
-
 import numpy as np
 import matplotlib.pyplot as plt
 
 
 def teilsummen(n, p):
     k = np.arange(1, n + 1)
-    teilsummen = []
-    summe = 0
-    for k in range(1, n + 1):
-        summe += 1 / math.pow(k, p)
-        teilsummen.append(summe)
-    return teilsummen
+    return np.cumsum(1 / k**p)
 
 
-def code3(n):
+def code4(n):
 
-    p_werte = np.arange(-2, 0.5, 0.5)
+    p_werte = np.arange(1.5, 4, 0.5)
     print(p_werte)
 
     for p in p_werte:
@@ -25,11 +18,11 @@ def code3(n):
 
     plt.xlabel('Anzahl Summenglieder')
     plt.ylabel('Teilsumme der Summenglieder')
-    plt.title('Wachstumszunahme für negative p-Werte')
+    plt.title('Konvergenzgeschwindigkeit für verschiedene p-Werte')
 
-    plt.legend(framealpha=1)
+    plt.legend(loc='center right', framealpha=1, borderpad=2)
     plt.grid(True)
     plt.show()
 
 
-code3(6)
+code4(100)
