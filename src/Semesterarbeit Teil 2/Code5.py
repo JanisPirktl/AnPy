@@ -10,11 +10,11 @@ def folge_glieder(n, p):
 
 def code5(n):
     p_werte = [1.1, 1.5, 2, 3, 5]
-    print(p_werte)
 
     for p in p_werte:
         folge_werte = folge_glieder(n, p)
         plt.plot(folge_werte, label=f'p = {round(p, 1)}')
+        print(folge_werte)
 
     plt.xlabel('Anzahl Folgeglieder')
     plt.ylabel('Glied der Folge')

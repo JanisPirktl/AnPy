@@ -6,18 +6,12 @@ import matplotlib.pyplot as plt
 
 def teilsummen(n, p):
     k = np.arange(1, n + 1)
-    teilsummen = []
-    summe = 0
-    for k in range(1, n + 1):
-        summe += 1 / math.pow(k, p)
-        teilsummen.append(summe)
-    return teilsummen
+    return np.cumsum(1 / np.power(k, p))
 
 
 def code3(n):
 
     p_werte = np.arange(-2, 0.5, 0.5)
-    print(p_werte)
 
     for p in p_werte:
         teilsummen_werte = teilsummen(n, p)
