@@ -4,7 +4,7 @@ from sympy import symbols, diff
 x = symbols('x')
 funktion = 3 * x**5
 
-# Berechnen der ersten Ableitung der Funktion
+# Berechnen der ersten Differentialrechnung der Funktion
 ableitung = diff(funktion, x)
 
 print(ableitung)
