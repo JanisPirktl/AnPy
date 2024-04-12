@@ -8,5 +8,4 @@ def dezimal_zu_zweierkomplement(zahl, bit_stellen):
         return format(zweierkomplement, '0{}b'.format(bit_stellen))
 
 
-print(dezimal_zu_zweierkomplement(-39, 8))
-print(dezimal_zu_zweierkomplement(-40, 8))
+print(dezimal_zu_zweierkomplement(-99, 8))

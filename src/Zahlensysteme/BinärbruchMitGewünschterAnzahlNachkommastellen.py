@@ -18,4 +18,4 @@ def binarbruch2(dezimalzahl, AnzahlNachkommaStellen):
     return bin_ganzzahliger_teil + bin_bruchteil
 
 
-print(binarbruch2(0.1, 13))
+print(binarbruch2(0.6, 4))
