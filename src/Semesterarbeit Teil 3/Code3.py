@@ -9,14 +9,14 @@ def f(x):
 
 
 # Datapoints
-x_data = np.linspace(0, 2 * np.pi, 5)
+x_data = np.linspace(0, 2 * np.pi, 8)
 y_data = f(x_data)
 
 # Finer grid for display
 x_fine = np.linspace(0, 2 * np.pi, 100)
 y_fine = f(x_fine)
 
-# Kubic Spline
+# Spline
 cs = CubicSpline(x_data, y_data, bc_type='natural')
 y_spline = cs(x_fine)
 
@@ -28,6 +28,6 @@ plt.plot(x_fine, y_spline, '--', label='Kubischer Spline')
 plt.legend()
 plt.xlabel('x')
 plt.ylabel('y')
-plt.title('Approximation einer trigonometrischen Funktion mit kubischen Splines')
+plt.title('Verbesserte Approximation durch mehr Stützpunkte')
 plt.grid(True)
 plt.show()
