@@ -1,56 +1,76 @@
-import math
 import matplotlib.pyplot as plt
-import Funktionen as Functions
+import Funktionen as Fnk
 import sympy as sp
+from math import pi
 
 
-# Die zu integrierende Funktion
 def f(x):
-    return math.pi / x
+    return sp.cos(x)
 
 
-x_values = list(range(40, 60, 2))
-y_values_sekanten = []
-y_values_tangenten = []
-y_values_simpson = []
+a = -pi/2
+b = pi/2
 
-# Intervallgrenzen
-a = 1
-b = 2
+x = sp.symbols('x')
 
-# Berechnen des exakten Wertes mit SymPy
-x = sp.Symbol('x')
-exact_integral = sp.integrate(sp.pi / x, (x, a, b)).evalf()
+exact_value = sp.integrate(f(x), (x, a, b)).evalf()
 
-print(f"Exakter Wert des Integrals: {exact_integral}")
+num_stripes = list(range(2, 22, 2))
+
+results = {
+    'n': [],
+    'sekanten_trapez': [],
+    'tangenten_trapez': [],
+    'simpson': [],
+    'sekanten_fehler': [],
+    'tangenten_fehler': [],
+    'simpson_fehler': []
+}
+
+for n in num_stripes:
+    sekanten_result = Fnk.sekanten_trapez_regel(f, a, b, n)
+    tangenten_result = Fnk.tangenten_trapez_regel(f, a, b, n)
+    simpson_result = Fnk.simpson_regel(f, a, b, n)
+
+    results['n'].append(n)
+    results['sekanten_trapez'].append(sekanten_result)
+    results['tangenten_trapez'].append(tangenten_result)
+    results['simpson'].append(simpson_result)
+    results['sekanten_fehler'].append(abs(sekanten_result - exact_value))
+    results['tangenten_fehler'].append(abs(tangenten_result - exact_value))
+    results['simpson_fehler'].append(abs(simpson_result - exact_value))
+
+print(f"Exakter Wert des Integrals: {exact_value}")
 print()
 
-for n in range(40, 60, 2):
-    approx_sekanten = Functions.sekanten_trapez_regel(f, a, b, n)
-    y_values_sekanten.append(approx_sekanten)
-    print(f"\nAnzahl der Unterintervalle: {n}")
-    print(f"Sekanten-Trapez-Regel: {approx_sekanten} (Fehler: {abs(exact_integral - approx_sekanten)})")
-print()
+for i in range(len(num_stripes)):
+    print(f"n = {results['n'][i]}")
+    print(f"Sekanten-Trapez-Ergebnis: {results['sekanten_trapez'][i]}, Fehler: {results['sekanten_fehler'][i]}")
+    print(f"Tangenten-Trapez-Ergebnis: {results['tangenten_trapez'][i]}, Fehler: {results['tangenten_fehler'][i]}")
+    print(f"Simpson-Ergebnis: {results['simpson'][i]}, Fehler: {results['simpson_fehler'][i]}")
+    print("-" * 50)
 
-for n in range(40, 60, 2):
-    approx_tangenten = Functions.tangenten_trapez_regel(f, a, b, n)
-    y_values_tangenten.append(approx_tangenten)
-    print(f"\nAnzahl der Unterintervalle: {n}")
-    print(f"Tangenten-Trapez-Regel: {approx_tangenten} (Fehler: {abs(exact_integral - approx_tangenten)})")
-print()
 
-for n in range(40, 60, 2):
-    approx_simpson = Functions.simpson_regel(f, a, b, n)
-    y_values_simpson.append(approx_simpson)
-    print(f"\nAnzahl der Unterintervalle: {n}")
-    print(f"Simpson-Regel: {approx_simpson} (Fehler: {abs(exact_integral - approx_simpson)})")
-
-plt.title('Vergleich der Genauigkeit der Approximationen')
-plt.xlabel("Anzahl der Unterintervalle")
-plt.ylabel("Approximation")
-plt.plot(x_values, y_values_sekanten, label='Sekanten-Trapez-Regel', color='red')
-plt.plot(x_values, y_values_tangenten, label='Tangenten-Trapez-Regel', color='green')
-plt.plot(x_values, y_values_simpson, label='Simpson-Regel', color='blue')
-plt.axhline(y=exact_integral, label="Exakter Wert des Integrals", color='yellow', linestyle='--')
+plt.figure(figsize=(12, 8))
+plt.plot(results['n'], results['sekanten_fehler'], label='Sekanten-Trapez-Fehler', color='blue')
+plt.plot(results['n'], results['tangenten_fehler'], label='Tangenten-Trapez-Fehler', color='green')
+plt.plot(results['n'], results['simpson_fehler'], label='Simpson-Fehler', color='red')
+plt.xlabel('Anzahl der Streifen (n)')
+plt.ylabel('Fehler')
+plt.title('Vergleich der Fehler bei numerischer Integration')
 plt.legend()
+plt.grid(True)
+plt.show()
+
+
+plt.figure(figsize=(12, 8))
+plt.plot(results['n'], results['sekanten_trapez'], label='Sekanten-Trapez-Ergebnis', color='blue')
+plt.plot(results['n'], results['tangenten_trapez'], label='Tangenten-Trapez-Ergebnis', color='green')
+plt.plot(results['n'], results['simpson'], label='Simpson-Ergebnis', color='red')
+plt.axhline(y=exact_value, color='orange', linestyle='--', label='Exakter Wert')
+plt.xlabel('Anzahl der Streifen (n)')
+plt.ylabel('Integralergebnis')
+plt.title('Vergleich der Integralergebnisse')
+plt.legend()
+plt.grid(True)
 plt.show()

@@ -12,7 +12,7 @@ def sekanten_trapez_regel(f, a, b, n):
 
 def tangenten_trapez_regel(f, a, b, n):
     delta_x = (b - a) / n
-    def derivative(f, x, h=1e-5):
+    def derivat(f, x, h=1e-5):
         return (f(x + h) - f(x - h)) / (2 * h)
 
     integral = 0.5 * (f(a) + f(b))
@@ -23,7 +23,7 @@ def tangenten_trapez_regel(f, a, b, n):
     for i in range(n):
         x_i = a + i * delta_x
         x_ip1 = x_i + delta_x
-        integral += (delta_x ** 2 / 12) * (derivative(f, x_i) - derivative(f, x_ip1))
+        integral += (delta_x ** 2 / 12) * (derivat(f, x_i) - derivat(f, x_ip1))
 
     integral *= delta_x
     return integral
@@ -45,5 +45,3 @@ def simpson_regel(f, a, b, n):
 
     integral *= delta_x / 3
     return integral
-
-
