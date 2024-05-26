@@ -8,7 +8,7 @@ def funktion(x):
 
 # Definiere das Intervall
 a = -1  # Untere Grenze
-b = 1  # Obere Grenze
+b = 1 # Obere Grenze
 
 
 ergebnis, fehler = integrate.quad(funktion, a, b)
