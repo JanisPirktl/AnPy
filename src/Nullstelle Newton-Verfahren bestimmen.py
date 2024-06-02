@@ -40,11 +40,11 @@ def newton_raphson(f, df, x0, tol=1e-6, max_iter=1000):
 
 # Beispiel: Nullstelle der Funktion f(x) = x^2 - 2
 def f(x):
-    return x ** 2 - 2
+    return x**3 + 3*x**2 - x - 8
 
 
 def df(x):
-    return 2 * x
+    return 3*x**2 + 6*x - 1
 
 
 # Startwert
