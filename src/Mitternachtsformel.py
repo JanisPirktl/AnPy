@@ -20,8 +20,8 @@ def berechne_nullstellen(a, b, c):
         return f"Die Nullstellen der Gleichung sind: x1 = {x1}, x2 = {x2}"
 
 # Beispielaufruf
-a = 3
-b = 9
-c = 6
+a = 12
+b = -200
+c = 600
 nullstellen = berechne_nullstellen(a, b, c)
 print(nullstellen)
